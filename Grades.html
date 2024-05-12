@@ -1,0 +1,596 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>
+        myMapúa: My Grades
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="Css/csStyle.css" rel="stylesheet" type="text/css">
+    <link href="Css/csStructure.css" rel="stylesheet" type="text/css">
+    <link href="Css/cssAlert.css" rel="stylesheet" type="text/css">
+    <link href="Css/jquery-ui-1.12.1-blitzer/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Jscript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jsNav.js"></script>
+    <script type="text/javascript" src="Jscript/jsAlert.js"></script>
+</head>
+
+<body>
+    <form method="post" action="./Grades.aspx" id="aspnetForm">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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">
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+        <script
+            src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMk18vvGtvsDYCNRqRvIKtoppgd-fBXxCoU1JgrO6SrrIScXMw2&amp;t=638286353964787378"
+            type="text/javascript"></script>
+        <script src="Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+        <script src="Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2D83CBBC">
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$cphMain$upGrades', ''], ['ctl00$cphMain$ddlSchoolYear', ''], [], 90, 'ctl00');
+            //]]>
+        </script>
+        <div id="header"><span id="header2"></span></div>
+        <div id="placeHolderBody">
+            <div id="topNavigation">
+                <input type="submit" name="ctl00$cphMain$StudentNavigation1$btnToEmployee" value="..."
+                    id="ctl00_cphMain_StudentNavigation1_btnToEmployee" style="display:none">
+                <div id="home"><a href="index.html">My Home</a></div>
+                <div id="profile" class="show"><span class="first">Profile</span><span id="pro" class="excol"
+                        style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
+                <ul class="subUl toggle">
+                    <li><a id="contactinfo" href="ContactInfo.aspx">My Contact Info</a></li>
+                    <li><a id="datasheet" href="StudentDataSheet.aspx">My Personal Data</a></li>
+                    <li id="grades" class="selected">My Grades</li>
+                    <li id="schedule"><a href="Schedule.aspx">My Schedule</a></li>
+                    <li id="curriculum"><a href="Curriculum.aspx">My Curriculum</a></li>
+                    <li id="mail"><a href="http://portal.office.com" target="_blank">My Office 365</a></li>
+                    <li id="changepassword"><a href="http://aka.ms/sspr" target="_blank">Reset My Password</a></li>
+                    <li id="registerpassword"><a href="http://aka.ms/ssprsetup" target="_blank">Reset Info Update</a>
+                    </li>
+                </ul>
+                <div id="reservation" class="show"><span class="first">Enrollment</span><span id="res" class="excol"
+                        style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
+                <ul class="subUl toggle">
+                    <li id="GSmanual"><a href="https://my.mapua.edu.ph/Student/Online Enrollment User Manual.pdf"
+                            target="_blank">Online Enrollment User Manual</a></li>
+                    <li id="gsa"><a href="GSA.aspx">Print GSA</a></li>
+                </ul>
+                <div id="payments" class="show"><span class="first">Bills &amp; Payments</span><span id="pays"
+                        class="excol"
+                        style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
+                <ul class="subUl toggle">
+                    <li id="bukaslogo"><a href="MyMapuaBukasPDF.pdf" target="_blank">Guidelines for Bukas Installment
+                            Plan</a></li>
+                    <li id="charges"><a href="Payment.aspx">Statement of account</a></li>
+                    <li id="paymenthistory"><a href="PaymentHistory.aspx">Payment History</a></li>
+                </ul>
+                <div id="services" class="show"><span class="first">Services</span><span id="ser" class="excol"
+                        style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
+                <ul class="subUl toggle">
+                    <li id="academicdocuments"><a href="AcademicDocuments.aspx">Academic Documents</a></li>
+                    <li id="downloadableforms"><a href="DownloadableForms.aspx">Downloadable Forms</a></li>
+                    <li id="ecm"><a href="ECM.aspx" target="_blank">E-CM</a></li>
+                    <li id="coursera"><a href="Coursera.aspx">Subscribe to Coursera</a></li>
+                    <li id="linkedin"><a href="LinkedinLearning.aspx">LinkedIn Learning</a></li>
+                </ul>
+                <div id="feedbackParent" class="show"><span class="first">Concern/Feedback</span><span id="feedb"
+                        class="excol"
+                        style="background-image: url(&quot;Images/Navigation/plusSmall.png&quot;);">&nbsp;</span></div>
+                <ul class="subUl toggle" style="display: none;">
+                    <li id="counselor"><a href="mailto:ee_cgc@mymail.mapua.edu.ph">Email myCounselor</a></li>
+                    <li id="intakeInterview"><a href="IntakeInterview.aspx">Intake Interview</a></li>
+                    <li id="needAnalysis"><a href="NeedAnalysisSurvey.aspx">Need Analysis Survey</a></li>
+                    <li id="feedback"><a href="/Auth/Feedback.aspx" target="_blank">Service Feedback</a></li>
+                </ul>
+                <div id="logoff"><a href="/LogOff.aspx">Sign Out</a></div>
+                <br>
+            </div>
+            <div id="contentBody">
+                <p class="title2">My Grades </p><br>
+                SY: <select name="ctl00$cphMain$ddlSchoolYear"
+                    onchange="if (!window.__cfRLUnblockHandlers) return false; javascript:setTimeout('__doPostBack(\'ctl00$cphMain$ddlSchoolYear\',\'\')', 0)"
+                    id="ctl00_cphMain_ddlSchoolYear" style="width:240px;">
+                    <option selected="selected" value="2023">2023 - 2024</option>
+                </select>
+                <div id="ctl00_cphMain_UpdateProgress1" style="visibility:hidden;display:block;" role="status"
+                    aria-hidden="true">
+                    <img src="Images/ajax-loader.gif" alt="loading..."> Loading ...
+                </div>
+                <div id="ctl00_cphMain_upGrades">
+                    <div class="term">
+                        <a id="term3" href="#" class="ShowLink">TERM 3</a>
+                        <a id="term2" href="#" class="ShowLink">TERM 2</a>
+                        <a id="term1" href="#" class="Disabled">TERM 1</a>
+                    </div>
+                   <div id="maintable2" style="display: none;">
+                    <table class="tableStyle1" id="term2Table" style="display: none;">
+                        <tbody>
+                            <tr class="title">
+                                <td>Courses</td>
+                                <td>Section</td>
+                                <td>Grade</td>
+                                <td>Unit</td>
+                                <td>Completion</td>
+                            </tr>
+                            <tr>
+                                <td>PHY104</td>
+                                <td>A13</td>
+                                <td>1.50</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>PHY104L</td>
+                                <td>A13</td>
+                                <td>1.75</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>CPE111-4</td>
+                                <td>E01 </td>
+                                <td>1.75</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>GED104</td>
+                                <td>A13 </td>
+                                <td>2.50</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>FW02-2</td>
+                                <td>B18</td>
+                                <td>P</td>
+                                <td>2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>GED117</td>
+                                <td>B16</td>
+                                <td>2.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>MATH147-0</td>
+                                <td>A12</td>
+                                <td>1.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DRAW10W-1</td>
+                                <td>B24</td>
+                                <td>2.00</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    <table id="term2Table1" class="tableStyle1" style="display: none;">
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Units Considered</td>
+                                <td style="width:250px;text-align:justify;">21</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Quarterly Wtd. Average</td>
+                                <td style="width:250px;text-align:justify;">1.8714</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Running Average</td>
+                                <td style="width:250px;text-align:justify;">1.8095</td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    <table id="term2Table2" class="tableStyle1" style="display: none;">
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Readmission Status</td>
+                                <td style="width:250px;text-align:justify;">OK</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Status</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Remarks</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    </div>
+
+                    <!-- TERM 2 -->
+                    <div id="maintable1" style="display: none;">
+                    <table class="tableStyle1" id="term1Table" tyle="display: none;">
+                        <tbody>
+                            <tr class="title">
+                                <td>Courses</td>
+                                <td>Section</td>
+                                <td>Grade</td>
+                                <td>Unit</td>
+                                <td>Completion</td>
+                            </tr>
+                            <tr>
+                                <td>CM011</td>
+                                <td>A25 </td>
+                                <td>2.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>CM011L</td>
+                                <td>A25 </td>
+                                <td>1.75</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>CPE111</td>
+                                <td>A25 </td>
+                                <td>2.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>EEA100</td>
+                                <td>A25 </td>
+                                <td>1.75</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>FW01-1</td>
+                                <td>A25 </td>
+                                <td>P</td>
+                                <td>2</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>GED105</td>
+                                <td>A25 </td>
+                                <td>2.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>MATH101C</td>
+                                <td>A25 </td>
+                                <td>1.50</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>MATH146-0</td>
+                                <td>A25 </td>
+                                <td>1.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>NSTP100</td>
+                                <td>A25 </td>
+                                <td>P</td>
+                                <td>1.5</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="tableStyle1" id="term1Table1" tyle="display: none;">
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Units Considered</td>
+                                <td style="width:250px;text-align:justify;">16.5</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Quarterly Wtd. Average</td>
+                                <td style="width:250px;text-align:justify;">1.9333</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Running Average</td>
+                                <td style="width:250px;text-align:justify;">1.9333</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="tableStyle1" id="term1Table2" tyle="display: none;">
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Readmission Status</td>
+                                <td style="width:250px;text-align:justify;">OK</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Status</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Remarks</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <!--TERM 1-->
+                    <div id="maintable3" >
+                    <table class="tableStyle1" id="term3Table" >
+                        <tbody>
+                            <tr class="title">
+                                <td>Courses</td>
+                                <td>Section</td>
+                                <td>Grade</td>
+                                <td>Unit</td>
+                                <td>Completion</td>
+                            </tr>
+                            <tr>
+                                <td>MATH156-0</td>
+                                <td>A13 </td>
+                                <td>1.75</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>EEA101-4</td>
+                                <td>A13 </td>
+                                <td>2.00</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>EEA101-4L</td>
+                                <td>B24 </td>
+                                <td>1.25</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>CAD10L</td>
+                                <td>A13 </td>
+                                <td>1.25</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PHY105</td>
+                                <td>A13</td>
+                                <td>2.00</td>
+                                <td>2</td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>PHY105L</td>
+                                <td>A13 </td>
+                                <td>1.75</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PHY105X</td>
+                                <td>A13 </td>
+                                <td>P</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>GED102-1</td>
+                                <td>E01 </td>
+                                <td>2.25</td>
+                                <td>3</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="tableStyle1" id="term3Table1" >
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Units Considered</td>
+                                <td style="width:250px;text-align:justify;">14</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Quarterly Wtd. Average</td>
+                                <td style="width:250px;text-align:justify;">1.8726</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Running Average</td>
+                                <td style="width:250px;text-align:justify;">1.8750</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="tableStyle1" id="term3Table2" >
+                        <tbody>
+                            <tr>
+                                <td class="title" style="width:170px">Readmission Status</td>
+                                <td style="width:250px;text-align:justify;">OK</td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Status</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                            <tr>
+                                <td class="title" style="width:170px">Academic Remarks</td>
+                                <td style="width:250px;text-align:justify;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <br>
+                </div><br>
+                <p><span class="strong">Note:</span> If you encounter errors, please report it directly to the <a
+                        href="mailto:helpdesk@mapua.edu.ph">myMapúa Administrator</a></p>
+
+            </div>
+        </div>
+        <div class="hairLine"></div>
+        <div class="wideLine"></div>
+        <div class="hairLine"></div>
+        <div id="footer">
+            <span>Copyright © 2001-2017. All rights reserved. <a href="http://www.mapua.edu.ph" target="_blank"
+                    class="white noDecor">Mapúa University</a>
+            </span>
+            <br>
+            <a href="https://my.mapua.edu.ph/Public/TermsOfService.aspx" id="ctl00_aTerms" class="white boldContent"
+                target="_blank">Terms of Service</a> | <a href="https://my.mapua.edu.ph/Public/PrivacyPolicy.aspx"
+                id="ctl00_aPrivacy" class="white boldContent" target="_blank">Privacy Policy</a><br>
+            <a href="mailto:helpdesk@mapua.edu.ph" class="white noDecor">helpdesk@mapua.edu.ph</a>
+            <br>
+            <noscript>
+                <meta http-equiv="refresh" content="0; URL=https://my.mapua.edu.ph/Error/DisabledJavaScript.html" />
+            </noscript>
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.Application.add_init(function () {
+                $create(Sys.UI._UpdateProgress, { "associatedUpdatePanelId": null, "displayAfter": 500, "dynamicLayout": false }, null, null, $get("ctl00_cphMain_UpdateProgress1"));
+            });
+            //]]>
+        </script>
+    </form>
+    <script>
+        // Function to show/hide tables based on selected term
+        function showTerm(term) {
+        if (term === "term1") {
+            document.getElementById("term1Table").style.display = "table";
+            document.getElementById("term1Table1").style.display = "table";
+            document.getElementById("term1Table2").style.display = "table";
+            document.getElementById("maintable1").style.display = "block";
+
+            //term 2 and 3 tables
+
+            document.getElementById("term2Table").style.display = "none";
+            document.getElementById("term2Table1").style.display = "none";
+            document.getElementById("term2Table2").style.display = "none";
+            document.getElementById("maintable2").style.display = "none";
+
+            document.getElementById("term3Table").style.display = "none";
+            document.getElementById("term3Table1").style.display = "none";
+            document.getElementById("term3Table2").style.display = "none";
+            document.getElementById("maintable3").style.display = "none";
+
+
+            document.getElementById("term1").classList.remove('ShowLink');
+            document.getElementById("term2").classList.remove('Disabled'); // Enable term2
+            document.getElementById("term3").classList.remove('Disabled'); // Enable term3
+            document.getElementById("term2").classList.add('ShowLink');
+            document.getElementById("term3").classList.add('ShowLink');
+            document.getElementById("term1").classList.add('Disabled'); // Disable term1
+            
+        } else if (term === "term2") {
+            document.getElementById("term2Table").style.display = "table";
+            document.getElementById("term2Table1").style.display = "table";
+            document.getElementById("term2Table2").style.display = "table";
+            document.getElementById("maintable2").style.display = "block";
+
+            //term 1 and 3 tables
+
+            document.getElementById("term1Table").style.display = "none";
+            document.getElementById("term1Table1").style.display = "none";
+            document.getElementById("term1Table2").style.display = "none";
+            document.getElementById("maintable1").style.display = "none";
+
+            document.getElementById("term3Table").style.display = "none";
+            document.getElementById("term3Table1").style.display = "none";
+            document.getElementById("term3Table2").style.display = "none";
+            document.getElementById("maintable3").style.display = "none";
+
+
+            document.getElementById("term1").classList.remove('Disabled'); // Enable term1
+            document.getElementById("term3").classList.remove('Disabled'); // Enable term3
+            document.getElementById("term2").classList.remove('ShowLink');
+            document.getElementById("term1").classList.add('ShowLink');
+            document.getElementById("term3").classList.add('ShowLink');
+            document.getElementById("term2").classList.add('Disabled'); // Disable term2
+        } else if (term === "term3") {
+            document.getElementById("term3Table").style.display = "table";
+            document.getElementById("term3Table1").style.display = "table";
+            document.getElementById("term3Table2").style.display = "table";
+            document.getElementById("maintable3").style.display = "block";
+
+             //term 1 and 3 tables
+
+            document.getElementById("term2Table").style.display = "none";
+            document.getElementById("term2Table1").style.display = "none";
+            document.getElementById("term2Table2").style.display = "none";
+            document.getElementById("maintable2").style.display = "none";
+
+            document.getElementById("term1Table").style.display = "none";
+            document.getElementById("term1Table1").style.display = "none";
+            document.getElementById("term1Table2").style.display = "none";
+            document.getElementById("maintable1").style.display = "none";
+
+
+            document.getElementById("term1").classList.remove('Disabled'); // Enable term1
+            document.getElementById("term2").classList.remove('Disabled'); // Enable term2
+            document.getElementById("term3").classList.remove('ShowLink');
+            document.getElementById("term1").classList.add('ShowLink');
+            document.getElementById("term2").classList.add('ShowLink');
+            document.getElementById("term3").classList.add('Disabled'); // Disable term3
+        }
+        }
+    
+        // Event listeners for term selection
+        document.getElementById("term1").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            showTerm("term1");
+        });
+    
+        document.getElementById("term2").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            showTerm("term2");
+        });
+        document.getElementById("term3").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        showTerm("term3");
+    });
+    </script>
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
+        integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;882c511fbf115dde&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;token&quot;:&quot;6b3bdc68b4fd4ea0a3a3c1e5963ab154&quot;}"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

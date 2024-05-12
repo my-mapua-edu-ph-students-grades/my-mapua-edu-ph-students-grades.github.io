@@ -1,0 +1,84 @@
+#popup_container {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background: #fff;
+    border: solid 1px #999;
+    color: #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+#popup_title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.75em;
+    color: #fff;
+    background: #9d0a10 repeat-x top;
+    border: solid 1px #fff;
+    border-bottom: solid 1px #999;
+    cursor: default;
+    padding: 0;
+    margin: 0
+}
+
+#popup_content {
+    background: no-repeat 16px 16px;
+    padding: 1em 1.75em;
+    margin: 0;
+    text-align: justify;
+    min-width: 150px;
+    min-height: 50px;
+    max-width: 800px
+}
+
+#popup_content.alert {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Information.png)
+}
+
+#popup_content.confirm {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Question.png)
+}
+
+#popup_content.confirmWarning {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Warning.png)
+}
+
+#popup_content.prompt {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Information.png)
+}
+
+#popup_content.confirmSaveContactInfo {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Question.png)
+}
+
+#popup_content.confirmSaveSubscription {
+    background-position: 10px 12px;
+    background-image: url(../Images/Alert/Question.png)
+}
+
+#popup_message {
+    padding-left: 48px
+}
+
+#popup_panel {
+    text-align: center;
+    margin: 1em 0 0 1em
+}
+
+#popup_prompt {
+    margin: .5em 0
+}
+
+#popup_container input {
+    margin-right: 5px;
+    padding: 2px 5px;
+    width: 80px;
+    height: 26px
+}

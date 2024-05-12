@@ -1,0 +1,392 @@
+#header {
+    height: 92px;
+    background: url(../Images/headerV2_1.webp) repeat-x;
+    float: left;
+    width: 90%;
+    padding: 0 5%;
+    min-width: 900px
+}
+
+#header2 {
+    height: 92px;
+    width: 285px;
+    background: url(../Images/headerV2_2.webp) no-repeat;
+    float: left
+}
+
+#placeHolderBody,
+.space,
+.hairLine,
+.wideLine,
+#footer {
+    width: 100%;
+    float: left
+}
+
+#placeHolderBody {
+    background-color: #fff
+}
+
+#topNavigation {
+    width: 170px;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+    border-right: solid 1px #ccc
+}
+
+#topNavigation div {
+    padding: 5px 0;
+    margin-top: 8px;
+    float: left;
+    width: 100%
+}
+
+#topNavigation div span {
+    padding-left: 20px
+}
+
+#topNavigation div span.first {
+    float: left
+}
+
+#topNavigation div:hover {
+    cursor: pointer;
+    background-color: #c5c5c5
+}
+
+#topNavigation div a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding-left: 20px
+}
+
+#topNavigation ul {
+    list-style: none;
+    clear: both
+}
+
+#topNavigation ul.subUl {
+    padding-left: 15px
+}
+
+#topNavigation li {
+    padding: 5px 0
+}
+
+#topNavigation li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+    display: block
+}
+
+#topNavigation li:hover {
+    background-color: #c5c5c5
+}
+
+#topNavigation li.selected {
+    background-color: #9d0a10;
+    color: #fff;
+    font-weight: 700;
+    border-right: solid 1px Gray;
+    padding-left: 20px
+}
+
+#topNavigation div.selected {
+    background-color: #9d0a10;
+    color: #fff;
+    font-weight: 700;
+    border-right: solid 1px Gray
+}
+
+#vline {
+    background-color: #ccc;
+    height: 300px;
+    width: 1px;
+    float: left
+}
+
+#contentBody {
+    width: 780px;
+    padding: 20px 0 20px 20px;
+    border-left: solid 1px #ccc;
+    float: left;
+    min-height: 650px;
+    min-width: 750px
+}
+
+.space {
+    height: 10px;
+    background-color: #fff
+}
+
+.hairLine {
+    height: 1px;
+    background-color: #460507
+}
+
+.wideLine {
+    height: 4px;
+    background-color: #fdbc2d
+}
+
+#footer {
+    text-align: center;
+    font-size: 8pt;
+    color: #fff
+}
+
+#goto {
+    background: url(../Images/Navigation/goto.webp)
+}
+
+#home {
+    background: url(../Images/Navigation/home.webp)
+}
+
+#profile {
+    background: url(../Images/Navigation/profile.webp)
+}
+
+#contactinfo {
+    background: url(../Images/Navigation/contactinfo.png)
+}
+
+#grades {
+    background: url(../Images/Navigation/grades.webp)
+}
+
+#schedule {
+    background: url(../Images/Navigation/schedule.webp)
+}
+
+#curriculum {
+    background: url(../Images/Navigation/curriculum.png)
+}
+
+#reservation {
+    background: url(../Images/Navigation/reservation.webp)
+}
+
+#GSmanual {
+    background: url(../Images/Navigation/academicdocuments.webp)
+}
+
+#managecourse {
+    background: url(../Images/Navigation/managecourse.webp)
+}
+
+#managesection {
+    background: url(../Images/Navigation/managesection.webp)
+}
+
+#courserequest {
+    background: url(../Images/Navigation/academicdocuments.webp)
+}
+
+#finalization {
+    background: url(../Images/Navigation/finalization.webp)
+}
+
+#unfinalize {
+    background: url(../Images/Navigation/unfinalize.webp)
+}
+
+#gsa {
+    background: url(../Images/Navigation/gsa.webp)
+}
+
+#payments {
+    background: url(../Images/Navigation/billingpayment.webp)
+}
+
+#charges {
+    background: url(../Images/Navigation/charges.webp)
+}
+
+#paymenthistory {
+    background: url(../Images/Navigation/paymenthistory.webp)
+}
+
+#mail {
+    background: url(../Images/Navigation/mail.webp)
+}
+
+#changepassword {
+    background: url(../Images/Navigation/changepassword.webp)
+}
+
+#registerpassword {
+    background: url(../Images/Navigation/registerpassword.webp)
+}
+
+#editprofile {
+    background: url(../Images/Navigation/editprofile.webp)
+}
+
+#services {
+    background: url(../Images/Navigation/onlineservices.webp)
+}
+
+#counselor {
+    background: url(../Images/Navigation/counselor.webp);
+    cursor: pointer
+}
+
+#academicdocuments {
+    background: url(../Images/Navigation/academicdocuments.webp)
+}
+
+#downloadableforms {
+    background: url(../Images/Navigation/downloadables.webp)
+}
+
+#ecm {
+    background: url(../Images/Navigation/ecm.webp)
+}
+
+#chatbox {
+    background: url(../Images/Navigation/chatbox.webp)
+}
+
+#dropping {
+    background: url(../Images/Navigation/dropping.webp)
+}
+
+#tor {
+    background: url(../Images/Navigation/tor.webp)
+}
+
+#gradescopy {
+    background: url(../Images/Navigation/gradescopy.webp)
+}
+
+#completion {
+    background: url(../Images/Navigation/completion.webp)
+}
+
+#etc {
+    background: url(../Images/Navigation/etc.webp)
+}
+
+#feedbackParent {
+    background: url(../Images/Navigation/feedback.webp)
+}
+
+#intakeInterview {
+    background: url(../Images/Navigation/intakeinterview.png)
+}
+
+#needAnalysis {
+    background: url(../Images/Navigation/needanalysis.png)
+}
+
+#familyProfile {
+    background: url(../Images/Navigation/familyprofile.webp)
+}
+
+#feedback {
+    background: url(../Images/Navigation/feedback.webp)
+}
+
+#logoff {
+    background: url(../Images/Navigation/logoff.webp)
+}
+
+#cscElection {
+    background: url(../Images/Navigation/curriculum.webp)
+}
+
+#bukaslogo {
+    background: url(../Images/Navigation/bukaslogo.webp)
+}
+
+#datasheet {
+    background: url(../Images/Navigation/datasheet.webp)
+}
+
+#coursera {
+    background: url(../Images/Navigation/coursera.webp)
+}
+
+#open-feedback:hover {
+    cursor: pointer
+}
+
+#facultydocuments {
+    background: url(../Images/Navigation/academicdocuments.webp)
+}
+
+#goto,
+#home,
+#profile,
+#contactinfo,
+#grades,
+#schedule,
+#curriculum,
+#reservation,
+#managecourse,
+#managesection,
+#finalization,
+#unfinalize,
+#gsa,
+#payments,
+#charges,
+#cscElection,
+#paymenthistory,
+#mail,
+#changepassword,
+#registerpassword,
+#editprofile,
+#services,
+#counselor,
+#academicdocuments,
+#downloadableforms,
+#ecm,
+#chatbox,
+#dropping,
+#tor,
+#gradescopy,
+#completion,
+#etc,
+#feedbackParent,
+#intakeInterview,
+#needAnalysis,
+#familyProfile,
+#feedback,
+#logoff,
+#GSmanual,
+#courserequest,
+#facultydocuments,
+#bukaslogo,
+#coursera,
+#datasheet {
+    background-position: left center;
+    background-repeat: no-repeat
+}
+
+.excol {
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: right
+}
+
+#semiFixDiv {
+    width: 170px;
+    float: left
+}
+
+.divLeft {
+    float: left;
+    width: 50%;
+    text-align: left
+}
+
+.divRight {
+    float: right;
+    width: 50%;
+    text-align: right
+}
