@@ -1,0 +1,302 @@
+﻿//"use strict";
+
+window.onload = function () {
+    if (document.getElementById("btnCheck") !== null && document.getElementById("btnCheck") !== undefined) {
+        document.getElementById("btnCheck").value = "Remove All";
+        checkunCheckAll(document.getElementsByName("Pay"));
+    }
+};
+
+function checkunCheckAll(cbCheck) {
+    var result = false;
+    var charges;
+    var chargesCount = 0;
+    var decTotalAmount = 0;
+
+    var decTotalBackAccountAmount = 0;
+
+    try {
+        charges = document.getElementById("chargesList").getElementsByClassName("charge");
+        chargesCount = charges.length;
+    }
+    catch (err) {
+        return result;
+    }
+
+    var btnCheck = document.getElementById("btnCheck");
+    var txtAmount = document.getElementById("txtAmount");
+    var isChecked = btnCheck.value === "Select All" ? true : false;
+
+    for (var i = 0; i < chargesCount; i++) {
+        var charge = charges[i];
+
+        //if (charge.cells[1].innerHTML.toLowerCase().indexOf("back account") !== -1) {
+        //    decTotalBackAccountAmount += parseFloat(charge.cells[7].innerText);
+        //}
+
+        decTotalAmount += parseFloat(charge.cells[7].innerText);
+        charge.cells[5].childNodes[0].checked = isChecked;
+    }
+
+    if (isChecked) {
+        btnCheck.value = "Remove All";
+        txtAmount.value = formatCurrency(decTotalAmount);
+    }
+    else {
+        //if (document.getElementById("157") !== null) {//with back account
+        //    document.getElementById("157").checked = true;
+        //    btnCheck.value = "Select All";
+        //    txtAmount.value = formatCurrency(decTotalBackAccountAmount);
+        //}
+        //else {
+            btnCheck.value = "Select All";
+            txtAmount.value = "0.00";
+        //}
+    }
+
+    return result;
+}
+
+function computeTotal(strAmountCharge, cbCheck, RowNumber) {
+    var decTotalAmountPayable = document.getElementById("txtAmount").value;
+    decTotalAmountPayable = removeComma(decTotalAmountPayable);
+    decTotalAmountPayable = parseFloat(decTotalAmountPayable);
+
+    if (cbCheck.checked === true) {
+        decTotalAmountPayable += parseFloat(strAmountCharge);
+    } else {
+        decTotalAmountPayable -= strAmountCharge;
+    }
+
+    var strDescription = document.getElementById("lblCOA" + RowNumber.toString()).innerText;
+    var pay = document.getElementsByName('Pay');
+    var isChecked = pay[RowNumber].checked;
+    var checkBoxCount = pay.length;
+    var intCtr;
+    var lblCOA;
+    var payCheckBox;
+    var hidCharge;
+
+    if (strDescription === "MATRICULATION FEE FINAL PAYMENT") {
+        if (isChecked === true) {
+            for (intCtr = 0; intCtr < checkBoxCount; intCtr++) {
+                lblCOA = document.getElementById("lblCOA" + intCtr.toString()).innerText;
+                payCheckBox = pay[intCtr];
+                hidCharge = removeComma(document.getElementById("hidAmount" + intCtr.toString()).value);
+
+                if (lblCOA === "MATRICULATION FEE INITIAL PAYMENT") {
+                    if (payCheckBox.checked === false) {
+                        payCheckBox.checked = true;
+                        decTotalAmountPayable += parseFloat(hidCharge);
+                    }
+                }
+
+                if (lblCOA === "MATRICULATION FEE PRELIM PAYMENT") {
+                    if (payCheckBox.checked === false) {
+                        payCheckBox.checked = true;
+                        decTotalAmountPayable += parseFloat(hidCharge);
+                    }
+                }
+            }
+        }
+    } else if (strDescription === "MATRICULATION FEE PRELIM PAYMENT") {
+        if (isChecked === false) {
+            for (intCtr = 0; intCtr < checkBoxCount; intCtr++) {
+                lblCOA = document.getElementById("lblCOA" + intCtr.toString()).innerText;
+                payCheckBox = pay[intCtr];
+                hidCharge = removeComma(document.getElementById("hidAmount" + intCtr.toString()).value);
+
+                if (lblCOA === "MATRICULATION FEE FINAL PAYMENT") {
+                    if (payCheckBox.checked === true) {
+                        payCheckBox.checked = false;
+                        decTotalAmountPayable -= parseFloat(hidCharge);
+                    }
+                }
+            }
+        } else {
+            for (intCtr = 0; intCtr < checkBoxCount; intCtr++) {
+                lblCOA = document.getElementById("lblCOA" + intCtr.toString()).innerText;
+                payCheckBox = pay[intCtr];
+                hidCharge = removeComma(document.getElementById("hidAmount" + intCtr.toString()).value);
+
+                if (lblCOA === "MATRICULATION FEE INITIAL PAYMENT") {
+                    if (payCheckBox.checked === false) {
+                        payCheckBox.checked = true;
+                        decTotalAmountPayable += parseFloat(hidCharge);
+                    }
+                }
+            }
+        }
+    } else if (strDescription === "MATRICULATION FEE INITIAL PAYMENT") {
+        if (isChecked === false) {
+            for (intCtr = 0; intCtr < checkBoxCount; intCtr++) {
+                lblCOA = document.getElementById("lblCOA" + intCtr.toString()).innerText;
+                payCheckBox = pay[intCtr];
+                hidCharge = removeComma(document.getElementById("hidAmount" + intCtr.toString()).value);
+
+                if (lblCOA === "MATRICULATION FEE PRELIM PAYMENT") {
+                    if (payCheckBox.checked === true) {
+                        payCheckBox.checked = false;
+                        decTotalAmountPayable -= parseFloat(hidCharge);
+                    }
+                }
+                if (lblCOA === "MATRICULATION FEE FINAL PAYMENT") {
+                    if (payCheckBox.checked === true) {
+                        payCheckBox.checked = false;
+                        decTotalAmountPayable -= parseFloat(hidCharge);
+                    }
+                }
+            }
+        }
+    }
+
+    if (decTotalAmountPayable < 0) {
+        decTotalAmountPayable = 0;
+    }
+
+    var btnCheck = document.getElementById("btnCheck");
+
+    btnCheck.value = "Remove All";
+
+    for (intCtr = 0; intCtr < checkBoxCount; intCtr++) {
+        if (pay[intCtr].checked === false) {
+            btnCheck.value = "Select All";
+            break;
+        }
+    }
+
+    document.getElementById("txtAmount").value = formatCurrency(decTotalAmountPayable);
+}
+
+function validatePayment() {
+    //delete after BancNet ok
+    //window.location = "https://my.mapua.edu.ph/Student/Default.aspx";
+    //return false;
+
+    document.getElementById("lblParam1").value = "";
+    document.getElementById("lblParam2").value = "";
+
+    var strRows = "";
+    var strParam = "";
+    var result = false;
+    var strCoaCodes = "";
+    var intCounter = 0;
+    var charges;
+    var chargesCount = 0;
+
+    try {
+        charges = document.getElementById("chargesList").getElementsByClassName("charge");
+        chargesCount = charges.length;
+    }
+    catch (err) {
+        return result;
+    }
+
+    for (var i = 0; i < chargesCount; i++) {
+        var charge = charges[i];
+
+        var chkbox = charge.cells[5].childNodes[0];
+
+        if (chkbox !== null && chkbox.checked === true) {
+            var intChargeNumber = charge.id;
+            var intCoaCode = chkbox.id;
+            var strAmount = removeComma(charge.cells[4].innerText);
+            var strMatriculationType = "";
+            var strChargeDescription = charge.cells[1].firstElementChild.innerText;
+
+            if (strChargeDescription.endsWith("INITIAL PAYMENT")) {
+                strMatriculationType = "-I";
+            }
+            else if (strChargeDescription.endsWith("PRELIM PAYMENT")) {
+                strMatriculationType = "-P";
+            }
+            else if (strChargeDescription.endsWith("FINAL PAYMENT")) {
+                strMatriculationType = "-F";
+            }
+
+            var isExist = strCoaCodes.search(intCoaCode);
+
+            if (isExist === -1) {
+                if (strCoaCodes === "") {
+                    strCoaCodes = intCoaCode;
+                }
+                else {
+                    strCoaCodes += "," + intCoaCode;
+                }
+
+                intCounter += 1;
+            }
+
+            if (strParam === "") {
+                strParam = intChargeNumber;
+            }
+            else {
+                strParam += "," + intChargeNumber;
+            }
+
+            if (strMatriculationType !== "") {
+                strMatriculationType += "/" + strAmount;
+                strParam += strMatriculationType;
+            }
+
+            //add rowCount to lblParam1
+            //if (strRows == "")
+            //  strRows = "." + i + ".";
+            //else
+            strRows += "." + (i + 1) + ".";
+        }
+    }
+
+    if (strParam !== "") {
+        //(typeof strParam) === "string" &&
+        document.getElementById("lblParam1").value = strRows;
+        document.getElementById("lblParam2").value = strParam;
+
+        if (intCounter > 5) {
+            jAlert("You can only pay five(5) different charges at a time.");
+        }
+        else {
+            result = true;
+        }
+    }
+    else {
+        jAlert("No payables selected. Please select at least one. Thank you.");
+    }
+
+    return result;
+}
+
+function formatCurrency(num) {
+    num = num.toString().replace(/\$|\,/g, "");
+
+    if (isNaN(num)) {
+        num = "0";
+    }
+
+    var sign = num == (num = Math.abs(num));
+    num = Math.floor(num * 100 + 0.50000000001);
+    var cents = num % 100;
+    num = Math.floor(num / 100).toString();
+
+    if (cents < 10) {
+        cents = "0" + cents;
+    }
+
+    for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3) ; i++) {
+        num = num.substring(0, num.length - (4 * i + 3)) + "," + num.substring(num.length - (4 * i + 3));
+    }
+
+    return (sign ? "" : "-") + num + "." + cents;
+}
+
+function removeComma(num) {
+    var strValue = num;
+    var strNewValue = "";
+    var mySplitResult = strValue.split(",");
+
+    for (var i = 0; i < mySplitResult.length; i++) {
+        strNewValue += mySplitResult[i];
+    }
+
+    return strNewValue;
+}

@@ -1,0 +1,371 @@
+h1,
+.h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+p,
+.paragraph {
+  line-height: 24px;
+}
+
+.bukas-lite,
+.danacita-lite {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Proxima Nova, Courier, monospace;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.bukas-lite[data-style='banner'] {
+  max-width: 240px;
+  width: 240px;
+  min-width: 240px;
+  border: 2px solid #3151aa;
+  border-radius: 10px;
+}
+
+.bukas-lite[data-style='banner'][data-size='large'] {
+  max-width: 280px;
+  width: 280px;
+  min-width: 280px;
+}
+
+.bukas-lite[data-style='button'] {
+  max-width: 166px;
+  width: 166px;
+  min-width: 166px;
+  border: 2px solid #3151aa;
+  border-radius: 10px;
+}
+
+.danacita-lite[data-style='banner'],
+.danacita-lite[data-style='button'] {
+  border: 2px solid #3151aa;
+  border-radius: 10px;
+}
+
+.bukas-lite[data-style='button'][data-size='large'] {
+  max-width: 200px;
+  width: 200px;
+  min-width: 200px;
+}
+
+.edb-bg-primary {
+  background-color: #3151aa;
+}
+
+.edb-text-white {
+  color: #fff;
+}
+
+.edb-text-primary {
+  color: #3151aa;
+}
+
+.edb-light-blue {
+  color: #4587ef;
+}
+
+.edb-uppercase {
+  text-transform: uppercase;
+}
+
+.edb-brand-button {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px 8px;
+  display: flex;
+}
+
+.edb-brand-button span {
+  font-size: 32px;
+}
+
+.edb-brand {
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  display: flex;
+}
+
+.edb-brand span {
+  font-size: 32px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.edb-logomark {
+  margin-right: 8px;
+}
+
+.edb-desc {
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  display: flex;
+}
+
+.edb-desc span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.bukas-lite[data-size='large'],
+.danacita-lite[data-size='large'] .edb-desc span {
+  font-size: 16px;
+}
+
+.danacita-lite .edb-brand span {
+  font-size: 24px;
+}
+
+.danacita-lite[data-style='button'] .edb-brand span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.danacita-lite[data-style='button'][data-size='large'] .edb-brand span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.danacita-lite[data-size='large'] .edb-brand span {
+  font-size: 32px;
+}
+
+.edb-text-center {
+  text-align: center;
+}
+
+.bukas-lite[data-style='landing'],
+.danacita-lite[data-style='landing'] {
+  display: block;
+}
+
+.edb-landing-wrapper {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 8px;
+  position: relative;
+}
+
+.edb-brand-desc {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edb-brand-landing {
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  display: flex;
+}
+
+.edb-brand-landing span {
+  font-size: 16px;
+}
+
+.edb-brand-landing-desc {
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.edb-alert-blue {
+  text-align: left;
+  background-color: #bee3f8;
+  border-radius: 8px;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  display: inline-flex;
+}
+
+.edb-alert-blue svg {
+  color: #3151aa;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.edb-icons-landing-section {
+  display: flex;
+}
+
+.edb-icons-landing-container {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.edb-icons-landing-container svg {
+  margin: auto;
+}
+
+.edb-icons-landing-container h6 {
+  max-width: 172px;
+  margin: 8px auto auto;
+}
+
+.edb-landing-hiw {
+  margin-top: 12px;
+}
+
+.edb-landing-hiw-content {
+  margin-top: 9px;
+}
+
+.edb-landing-hiw-content > h2 {
+  color: #3151aa;
+}
+
+.edb-landing-hiw-content > h5 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.edb-landing-hiw-content > p {
+  max-width: 416px;
+  margin: auto;
+}
+
+.edb-relative {
+  position: relative;
+}
+
+.edb-elm-number-one {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edb-elm-number-two {
+  z-index: -1;
+  margin-left: -4px;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edb-elm-number-three {
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edb-landing-actions {
+  text-align: center;
+  max-width: 378px;
+  margin: 20px auto 0;
+}
+
+.edb-landing-actions a {
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  background-color: #3151aa;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  display: flex;
+}
+
+.edb-backdrop-elm-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.edb-backdrop-elm-right {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .edb-backdrop-elm-right,
+  .edb-backdrop-elm-left {
+    display: none;
+  }
+}
+
+.edb-capitalize {
+  text-transform: capitalize;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url('proximaNovaRegular.a68d3ed4.woff2') format('woff2'),
+    url('proximaNovaRegular.aa79ee3b.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url('proximaNovaBold.2f489172.woff2') format('woff2'),
+    url('proximaNovaBold.1c41193a.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url('proximaNovaSemiBold.b49ffa8f.woff2') format('woff2'),
+    url('proximaNovaSemiBold.a4e324a5.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

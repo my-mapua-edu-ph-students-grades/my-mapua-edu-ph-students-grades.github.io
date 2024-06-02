@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>
+        myMapúa: My Curriculum
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="Css/csStyle.css" rel="stylesheet" type="text/css">
+    <link href="Css/csStructure.css" rel="stylesheet" type="text/css">
+    <link href="Css/cssAlert.css" rel="stylesheet" type="text/css">
+    <link href="Css/jquery-ui-1.12.1-blitzer/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="Css/csCurriculum.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Jscript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="Jscript/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="Jscript/jsNav.js"></script>
+    <script type="text/javascript" src="Jscript/jsAlert.js"></script>
+    <script src="Jscript/jsPopup.js" type="text/javascript"></script>
+    <link href="Css/cssPopup.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <form method="post" action="./Curriculum.aspx" id="aspnetForm">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="rajllvkAF6e4HjGpwJZ16kKZDilefdx7Jcrigl6F9LT8vdU/h0QSBYuX3WS6rdp6jB3DB0vpsQmNTSL8r4Jd6rgTAy/CD/ww/fPll+gqYmDVWhY8Ua8/tcBgMwF9eKYTE/MSFu5tY2QSI6lnl2pV9HpNbC7ugfQHsdlcl3+4HfDjXlOpBz7AYZ977PItF7+M/1FogqXB3h6pYq7tNdHlAR4HcKfsCufIu5AhUpE42NMv1aVG0Zm4yhd20Mm1DdWqIFD/o9ryQOHGDbK2zpO0pN2cYcvELD1QMmvs2mdKHZYWYYGlS/0ZVRzoaTworAiKQDPmS3TjiSxdcQP0FMBhC/VDzu3B+SYE41oMpHAwTqFVWuTy+HUS4XjzDuYJFqf3BaNMJKwwYI24Tm/J8xgepqPfLLBhk0GPBjbhhuAnvZYM4ic3Ioptau0uNUDmaoo/eM6akmSafA0NIYGRFTOtyi721ypw1f425t06mQtCrzGgaR6TdBrcId7k7ddVKfIGrgDf6B8HHr1QxM8L5SGEd2oS6aI=" />
+        </div>
+        <script type="939f13ad08975f8c954a9c8a-text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+        <script
+            src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMk18vvGtvsDYCNRqRvIKtoppgd-fBXxCoU1JgrO6SrrIScXMw2&amp;t=638286353964787378"
+            type="939f13ad08975f8c954a9c8a-text/javascript"></script>
+        <script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js"
+            type="939f13ad08975f8c954a9c8a-text/javascript"></script>
+        <script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js"
+            type="939f13ad08975f8c954a9c8a-text/javascript"></script>
+        <script type="939f13ad08975f8c954a9c8a-text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetCoreCourse:function(intYearLevel,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetCoreCourse',false,{intYearLevel:intYearLevel},succeededCallback,failedCallback,userContext); },
+GetElectives:function(strElectiveValue,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetElectives',false,{strElectiveValue:strElectiveValue},succeededCallback,failedCallback,userContext); },
+GetSpecialization:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSpecialization',false,{},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("Curriculum.aspx");
+PageMethods.GetCoreCourse= function(intYearLevel,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetCoreCourse(intYearLevel,onSuccess,onFailed,userContext); }
+PageMethods.GetElectives= function(strElectiveValue,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetElectives(strElectiveValue,onSuccess,onFailed,userContext); }
+PageMethods.GetSpecialization= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetSpecialization(onSuccess,onFailed,userContext); }
+//]]>
+</script>
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF4128BB" />
+        </div>
+        <script type="939f13ad08975f8c954a9c8a-text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+        <div id="header"><span id="header2"></span></div>
+        <div id="placeHolderBody">
+            <div id="topNavigation">
+                <input type="submit" name="ctl00$cphMain$StudentNavigation1$btnToEmployee" value="..."
+                    id="ctl00_cphMain_StudentNavigation1_btnToEmployee" style="display:none" />
+                <div id="home"><a href="Default.aspx">My Home</a></div>
+                <div id="profile" class="show"><span class="first">Profile</span><span id="pro"
+                        class="excol">&nbsp</span></div>
+                <ul class="subUl toggle">
+                    <li><a id="contactinfo" href="ContactInfo.aspx">My Contact Info</a></li>
+                    <li><a id="datasheet" href="StudentDataSheet.aspx">My Personal Data</a></li>
+                    <li><a id="grades" href="Grades.aspx">My Grades</a></li>
+                    <li id="schedule"><a href="Schedule.aspx">My Schedule</a></li>
+                    <li id="curriculum" class="selected">My Curriculum</li>
+                    <li id="mail"><a href="http://portal.office.com" target="_blank">My Office 365</a></li>
+                    <li id="changepassword"><a href="http://aka.ms/sspr" target="_blank">Reset My Password</a></li>
+                    <li id="registerpassword"><a href="http://aka.ms/ssprsetup" target="_blank">Reset Info Update</a>
+                    </li>
+                </ul>
+                <div id="reservation" class="show"><span class="first">Enrollment</span><span id="res"
+                        class="excol">&nbsp</span></div>
+                <ul class="subUl toggle">
+                    <li id="GSmanual"><a href="https://my.mapua.edu.ph/Student/Online Enrollment User Manual.pdf"
+                            target="_blank">Online Enrollment User Manual</a></li>
+                    <li id="managecourse"><a href="ManageCourse.aspx">Manage Course</a></li>
+                    <li id="managesection"><a href="ManageSection.aspx">Manage Section</a></li>
+                    <li id="courserequest"><a href="CourseRequest.aspx">Course Request Forms</a></li>
+                    <li id="finalization"><a href="Finalization.aspx">Finalization</a></li>
+                    <li id="unfinalize"><a href="Unfinalize.aspx">Unfinalize Load</a></li>
+                </ul>
+                <div id="payments" class="show"><span class="first">Bills &amp Payments</span><span id="pays"
+                        class="excol">&nbsp</span></div>
+                <ul class="subUl toggle">
+                    <li id="bukaslogo"><a href="MyMapuaBukasPDF.pdf" target="_blank">Guidelines for Bukas Installment
+                            Plan</a></li>
+                    <li id="charges"><a href="Payment.aspx">Statement of account</a></li>
+                    <li id="paymenthistory"><a href="PaymentHistory.aspx">Payment History</a></li>
+                </ul>
+                <div id="services" class="show"><span class="first">Services</span><span id="ser"
+                        class="excol">&nbsp</span></div>
+                <ul class="subUl toggle">
+                    <li id="academicdocuments"><a href="AcademicDocuments.aspx">Academic Documents</a></li>
+                    <li id="downloadableforms"><a href="DownloadableForms.aspx">Downloadable Forms</a></li>
+                    <li id="ecm"><a href="ECM.aspx" target="_blank">E-CM</a></li>
+                    <li id="coursera"><a href="Coursera.aspx">Subscribe to Coursera</a></li>
+                    <li id="linkedin"><a href="LinkedinLearning.aspx">LinkedIn Learning</a></li>
+                </ul>
+                <div id="feedbackParent" class="show"><span class="first">Concern/Feedback</span><span id="feedb"
+                        class="excol">&nbsp</span></div>
+                <ul class="subUl toggle">
+                    <li id="counselor"><a
+                            href="/cdn-cgi/l/email-protection#90f5f5cff3f7f3d0fde9fdf1f9fcbefdf1e0e5f1bef5f4e5bee0f8">Email
+                            myCounselor</a></li>
+                    <li id="intakeInterview"><a href="IntakeInterview.aspx">Intake Interview</a></li>
+                    <li id="needAnalysis"><a href="NeedAnalysisSurvey.aspx">Need Analysis Survey</a></li>
+                    <li id="feedback"><a href="/Auth/Feedback.aspx" target="_blank">Service Feedback</a></li>
+                </ul>
+                <div id="logoff"><a href="/LogOff.aspx">Sign Out</a></div>
+                <br />
+            </div>
+            <div id="contentBody">
+                <p class="title2">
+                    My Curriculum
+                </p>
+                <br />
+                <p>
+                    Program: <span>
+                        PHEE
+                    </span>Year Level: <span>
+                        1
+                    </span>Curriculum Year: <span>
+                        2023
+                    </span>
+                    <br />
+                    Specialization: <span>
+                        Unassigned
+                    </span>
+                </p>
+                <fieldset>
+                    <legend>Units</legend>
+                    <ul class="noBullet horizontalList">
+                        <li>&nbsp;<label>Required:
+                            </label>
+                            <span class="boldContent">
+                                202
+                            </span>
+                        </li>
+                        <li>
+                            <label>
+                                Credited:
+                            </label>
+                            <span class="boldContent">
+                                51.5
+                            </span>
+                        </li>
+                        <li>
+                            <label>
+                                Passed:
+                            </label>
+                            <span class="boldContent">
+                                51.5
+                            </span>
+                        </li>
+                        <li>
+                            <label>
+                                Left:
+                            </label>
+                            <span class="boldContent">
+                                150.5
+                            </span>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div id="colorLegend">
+                    Legend <span class="box bgColorTaken">Taken</span><span class="box bgColorInCurrentLoad">In
+                        Current Load</span><span class="box bgColorNotYetTaken">NotYetTaken</span><span
+                        class="box bgColorIncomplete">Incomplete</span><span
+                        class="box bgColorExempted">Exempted/Credited</span></div>
+                <div class="tab">
+                    <ul id="tabnav">
+                        <li id="core" class="highlight"><span id="ctl00_cphMain_CoreCourses"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(1)"
+                                data-cf-modified-939f13ad08975f8c954a9c8a->Core Courses</span></li>
+                        <li id="electives"><span
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; GetElectives('new')"
+                                data-cf-modified-939f13ad08975f8c954a9c8a->Electives</span></li>
+                        <li id="specialization"><span
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; GetSpecialization()"
+                                data-cf-modified-939f13ad08975f8c954a9c8a->Specialization</span></li>
+                    </ul>
+                </div>
+                <div id="curriculumBox">
+                    <div id="takenYear">Taken Year
+                        <span id="ctl00_cphMain_level1" class="boldContent"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(1)"
+                            className="boldContent" data-cf-modified-939f13ad08975f8c954a9c8a->1st</span><span
+                            id="ctl00_cphMain_level2" class="link"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(2)"
+                            data-cf-modified-939f13ad08975f8c954a9c8a->2nd</span><span id="ctl00_cphMain_level3"
+                            class="link" onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(3)"
+                            data-cf-modified-939f13ad08975f8c954a9c8a->3rd</span><span id="ctl00_cphMain_level4"
+                            class="link" onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(4)"
+                            data-cf-modified-939f13ad08975f8c954a9c8a->4th</span><span id="ctl00_cphMain_level5"
+                            class="link" onclick="if (!window.__cfRLUnblockHandlers) return false; GetCoreCourse(5)"
+                            data-cf-modified-939f13ad08975f8c954a9c8a->5th</span>
+                    </div>
+                    <br style="clear: both" />
+                    <div id="ElectivePanel"></div>
+                    <div id="frmCurriculum">
+                        <div id="1">
+                            <table class="tableStyle2">
+                                <tr class="title">
+                                    <td width="5%">Yr</td>
+                                    <td width="5%">Term</td>
+                                    <td width="5%">Course Code</td>
+                                    <td width="30%">Course Title</td>
+                                    <td width="5%">Lec Hrs</td>
+                                    <td width="5%">Lab Hrs</td>
+                                    <td width="5%">Credit Units</td>
+                                    <td width="15%">Pre-Requisites</td>
+                                    <td width="15%">Co-Requisites</td>
+                                    <td width="15%">Paired Courses</td>
+                                    <td class="hidden">Description</td>
+                                    <td class="hidden">Syllabus</td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td style="text-align:left;">CM011</td>
+                                    <td style="text-align:left">GENERAL CHEMISTRY FOR ENGINEERS (LECTURE)</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course covers discussions on core concepts of chemistry and
+                                        calculations that are important in the practice of the engineering profession.
+                                        The course covers topics on energy, such as electrochemical energy, nuclear
+                                        energy, and fossil fuels, engineering materials, chemistry of environment,
+                                        chemical safety, and special topics specific to different field of expertise.
+                                        Prerequisite: None. Co-requisite: None. Credit: 3 units</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">CM011L</td>
+                                    <td style="text-align:left">GENERAL CHEMISTRY FOR ENGINEERS (LABORATORY)</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left">CM011</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">A fundamental laboratory course which is a combination of
+                                        experimental and calculation laboratory, this course includes experiments and
+                                        exercises related to the principles and theories in chemistry that are covered
+                                        in CM011. Part of the course is a Community Immersion Program on the care of the
+                                        environment. Prerequisite: None. Co-requisite: CM011. Credit: 1 unit
+                                    </td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">CPE111-4</td>
+                                    <td style="text-align:left">DISCRETE MATHEMATICS</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course deals with logic, sets, proofs, growth of functions,
+                                        theory of numbers, counting techniques, trees and graph theory. Credit: 3 units.
+                                        Prerequisite : MATH146</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">EEA100</td>
+                                    <td style="text-align:left">ELECTRICAL ENGINEERING AS A PROFESSION</td>
+                                    <td>1.5</td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course introduces Electrical Engineering as a profession
+                                        with emphasis on the learning methods and techniques to help the students adjust
+                                        to the needs of the course, the quarter system, and to develop engineering
+                                        skills to succeed in the study of EE. Thus, it gives the student an introduction
+                                        to the Engineering profession and other related fields of study, and the career
+                                        paths available, with focus on the EE course and its specializations. Credit : 1
+                                        unit. Corequisite: None
+                                        Prerequisites: None
+                                    </td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">FW01-2</td>
+                                    <td style="text-align:left">PHYSICAL ACTIVITIES TOWARD HEALTH AND FITNESS 1 (PATHFIT
+                                        1): MOVEMENT COMPETENCY TRAINING</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THE COURSE REINTRODUCES THE FUNDAMENTAL MOVEMENT PATTERNS THAT
+                                        CONSIST OF NON-LOCOMOTOR AND LOCOMOTOR SKILLS, WHICH ARE INTEGRATED WITH CORE
+                                        TRAINING TO MEET THE DEMANDS OF FUNCTIONAL FITNESS AND PHYSICAL ACTIVITY
+                                        PERFORMANCE. EMPHASIS WILL BE ON EXERCISE REGRESSION AND PROGRESSION FOR THE
+                                        ENHANCEMENT OF FITNESS AND THE ADAPTATION OF MOVEMENT COMPETENCIES TO
+                                        INDEPENDENT PHYSICAL ACTIVITY PURSUITS. IN CONJUNCTION WITH FITNESS CONCEPTS,
+                                        EXERCISE AND HEALTHY EATING PRINCIPLES, PERIODIC EVALUATION OF ONE’S LEVEL OF
+                                        FITNESS AND PHYSICAL ACTIVITY, AS WELL AS EATING PATTERNS WILL BE CONDUCTED TO
+                                        MONITOR ONE’S PROGRESS AND ACHIEVEMENT OF PERSONAL FITNESS AND DIETARY GOALS.
+                                        COURSE CREDIT: 2 UNITS. PRE-REQUISITE: NONE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED105</td>
+                                    <td style="text-align:left">THE CONTEMPORARY WORLD</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course introduces students to the contemporary world by
+                                        examining the multifaceted phenomenon of globalization. Using the various
+                                        disciplines of the social sciences, it examines the economic, social, political,
+                                        technological, and other transformations that have created an increasing
+                                        awareness of the interconnectedness of peoples and places around the globe. To
+                                        this end, the course provides an overview of the various debates in global
+                                        governance, development, and sustainability. Beyond exposing the student to the
+                                        world outside the Philippines, it seeks to inculcate a sense of global
+                                        citizenship and global ethical responsibility.
+                                        This course includes mandatory topics on population education in the context of
+                                        population and demography.
+                                    </td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH101C</td>
+                                    <td style="text-align:left">FOUNDATIONAL MATHEMATICS</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course reinforces the foundational skills of students in
+                                        Mathematics necessary for the study of Calculus and higher-level Mathematics
+                                        courses. It covers selected topics in Algebra, Trigonometry, Solid Mensuration
+                                        and Analytic Geometry. Students will take drills and exercises focusing on these
+                                        areas.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH146-0</td>
+                                    <td style="text-align:left">CALCULUS 1</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left">MATH101C</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE COVERS LIMITS, CONTINUITY, DERIVATIVES OF BOTH
+                                        ALGEBRAIC AND TRANSCENDENTAL FUNCTIONS, PARAMETRIC EQUATIONS AND THEIR
+                                        DERIVATIVES, APPLICATIONS OF DERIVATIVES, INDETERMINATE FORMS, DIFFERENTIALS,
+                                        FUNCTIONS OF SEVERAL VARIABLES, SURFACES AND THEIR GRAPHS, AND PARTIAL
+                                        DERIVATIVES. CREDIT: 3 UNITS. PREREQUISITE: NONE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">NSTP100</td>
+                                    <td style="text-align:left">NATIONAL SERVICE TRAINING PROGRAM 1</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1.5</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">A classroom/web-based course that encompasses the common module
+                                        phase for all National Service Training Program students. Topics for discussions
+                                        include orientation on the NSTP Law, discussion on the Human Person, The
+                                        Filipino Value System, Groups, Leadership, Decision-Making, Disaster
+                                        Preparedness, Awareness and Management and Substance Abuse Education. Credit
+                                        Unit(s): 1.5 units.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="special">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>TOTAL</td>
+                                    <td>22.5</td>
+                                    <td>13.5</td>
+                                    <td>18.5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="hidden"></td>
+                                    <td class="hidden"></td>
+                                </tr>
+                            </table><br />
+                            <table class="tableStyle2">
+                                <tr class="title">
+                                    <td width="5%">Yr</td>
+                                    <td width="5%">Term</td>
+                                    <td width="5%">Course Code</td>
+                                    <td width="30%">Course Title</td>
+                                    <td width="5%">Lec Hrs</td>
+                                    <td width="5%">Lab Hrs</td>
+                                    <td width="5%">Credit Units</td>
+                                    <td width="15%">Pre-Requisites</td>
+                                    <td width="15%">Co-Requisites</td>
+                                    <td width="15%">Paired Courses</td>
+                                    <td class="hidden">Description</td>
+                                    <td class="hidden">Syllabus</td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td style="text-align:left;">DRAW10W-1</td>
+                                    <td style="text-align:left">ENGINEERING DRAWING AND PLANS</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE INTRODUCES THE GRAPHIC LANGUAGE, ITS IMPORTANCE AND
+                                        RELEVANCE IN ENGINEERING AND OTHER RELATED FIELDS. TOPICS INCLUDED ARE PRACTICES
+                                        AND TECHNIQUES OF GRAPHIC COMMUNICATION, STUDY AND APPLICATION OF DRAFTING
+                                        INSTRUMENTS, LETTERING, SCALE AND UNITS OF MEASURE, DESCRIPTIVE GEOMETRY,
+                                        ORTHOGRAPHIC VIEWS AND PRINCIPLES OF PROJECTION, AUXILIARY VIEWS, SECTIONAL
+                                        VIEWS, ISOMETRIC AND OTHER PICTORIAL DRAWINGS, DIMENSIONING AND THEIR
+                                        APPLICATIONS IN THE PREPARATION OF ENGINEERING WORKING DRAWINGS, ASSEMBLY AND
+                                        EXPLODED DRAWINGS AND DETAILED DRAWINGS. CREDIT UNIT(S): 1 UNIT.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">FW02-2</td>
+                                    <td style="text-align:left">PHYSICAL ACTIVITIES TOWARD HEALTH AND FITNESS 2 (PATHFIT
+                                        2): EXERCISE-BASED FITNESS ACTIVITIES</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course builds on the foundation of motor skills achieved
+                                        through core training. It will provide experiences in a variety of exercise
+                                        programs for the purpose of maintaining and enhancing cardiorespiratory and
+                                        musculoskeletal fitness (i.e., core stability, muscle strength, endurance and
+                                        power). It includes speed and agility training with a focus on body coordination
+                                        and balance. In conjunction with fitness concepts, exercise and healthy eating
+                                        principles, learners will be able to enhance their fitness through goal setting
+                                        and application of the exercise principles (i.e., frequency, intensity, time,
+                                        type, progression, and volume); adapt their movement competencies to independent
+                                        physical activity (pa) pursuits and periodically evaluate their pa and eating
+                                        patterns to monitor their progress and achievement of personal fitness and
+                                        dietary goals. Course credit: 2 units pre-requisite: none</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED104</td>
+                                    <td style="text-align:left">SCIENCE, TECHNOLOGY AND SOCIETY</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course deals with interactions between science and technology
+                                        and social, cultural, political, and economic contexts that shape and are shaped
+                                        by them. This interdisciplinary course engages students to confront the
+                                        realities brought about by science and technology in society, such realities
+                                        brought about by science and technology in society. Such realities pervade the
+                                        personal, the public, and the global aspects of our living and are integral to
+                                        human development. Scientific knowledge and technological development happen in
+                                        the context of society with all its socio-political, cultural, economic, and
+                                        philosophical underpinnings at play. This course seeks to instill reflective
+                                        knowledge in the students that they are able to live the good life and display
+                                        ethnical decision making in the face of scientific and technological
+                                        advancement. This course includes mandatory topics on climate change and
+                                        environmental awareness. Credit: 3 units.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED117</td>
+                                    <td style="text-align:left">GREAT BOOKS</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course will focus on selected masterpieces to be read an
+                                        analyzed in their entirety. Credit: 3 units.
+                                    </td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH147-0</td>
+                                    <td style="text-align:left">CALCULUS 2</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH101C, MATH146-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE COVERS BASIC INTEGRATION, TECHNIQUES OF INTEGRATION,
+                                        DEFINITE INTEGRALS, FUNDAMENTAL THEOREM OF CALCULUS, IMPROPER INTEGRALS, AND
+                                        MULTIPLE INTEGRATION. IT ALSO INCLUDES APPLICATIONS OF DEFINITE INTEGRALS AND
+                                        MULTIPLE INTEGRALS SUCH AREAS BOUNDED BY ALGEBRAIC AND POLAR CURVES, VOLUMES OF
+                                        SOLIDS OF REVOLUTION, LENGTH OF AN ARC, SURFACE OF REVOLUTION, CENTROIDS OF
+                                        PLANE REGION AND SOLIDS OF REVOLUTION, FORCE, WORK, AND VOLUMES BOUNDED BY
+                                        SURFACES. CREDIT: 3 UNITS. PREREQUISITE: MATH146</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH149-0</td>
+                                    <td style="text-align:left">LINEAR ALGEBRA WITH COMPUTER APPLICATION</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH146-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE DEALS WITH THE STUDY OF MATRICES AND DETERMINANTS AND
+                                        ITS ENGINEERING APPLICATIONS IN SOLVING SYSTEMS OF EQUATIONS LIKE KIRCHOFF’S
+                                        LAWS AND DECOMPOSITION OF PARTIAL FRACTIONS. IT ALSO COVERS ELEMENTARY ROW
+                                        OPERATIONS, VECTORS IN THE PLANE, VECTOR SPACES AND SUBSPACES, LINEAR
+                                        TRANSFORMATIONS, ORTHOGONALITY, EIGENVALUES AND EIGENVECTORS. CREDIT: 3 UNITS.
+                                        PREREQUISITE: MATH146-0</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">NSTP200</td>
+                                    <td style="text-align:left">NATIONAL SERVICE TRAINING PROGRAM 2</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1.5</td>
+                                    <td style="text-align:left">NSTP100</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">CWTS101
+                                        CIVIC WELFARE TRAINING SERVICE 01
+                                        Classroom-based discussions concerning the introduction to MAPÚA-CWTS and
+                                        lectures that introduces and promotes the MAPÚA-CWTS Dimensions of Development,
+                                        relevant societal concerns, the fundamentals of working with the community and
+                                        project development. Credits Unit(s): 1.5 units. Pre-requisite: NSTP100.
+                                        ROTC101
+                                        RESERVE OFFICERS TRAINING CORPS 01
+                                        Fundamentals and principles of military service, skills to move, shoot and
+                                        communicate, the right attitude of a military professional and ground drills.
+                                        Credit Unit(s): 1.5 units. Pre-requisite: NSTP100.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="special">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>TOTAL</td>
+                                    <td>21</td>
+                                    <td>9</td>
+                                    <td>16.5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="hidden"></td>
+                                    <td class="hidden"></td>
+                                </tr>
+                            </table><br />
+                            <table class="tableStyle2">
+                                <tr class="title">
+                                    <td width="5%">Yr</td>
+                                    <td width="5%">Term</td>
+                                    <td width="5%">Course Code</td>
+                                    <td width="30%">Course Title</td>
+                                    <td width="5%">Lec Hrs</td>
+                                    <td width="5%">Lab Hrs</td>
+                                    <td width="5%">Credit Units</td>
+                                    <td width="15%">Pre-Requisites</td>
+                                    <td width="15%">Co-Requisites</td>
+                                    <td width="15%">Paired Courses</td>
+                                    <td class="hidden">Description</td>
+                                    <td class="hidden">Syllabus</td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td style="text-align:left;">CAD10L-1</td>
+                                    <td style="text-align:left">COMPUTER-AIDED DRAFTING</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left">DRAW10W-1</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE INTRODUCES THE CONCEPTS OF COMPUTER-AIDED DRAFTING
+                                        AND DESCRIBES THE CAPABILITIES OF THE AUTOCAD OR OTHER SIMILAR SOFTWARE IN
+                                        DEVELOPING 2D AND 3D ELECTRONIC DRAWINGS. TOPICS INCLUDED ARE TERMINOLOGIES,
+                                        GENERAL OPERATING PROCEDURES, USER INTERFACE AND TECHNIQUES IN EXECUTING
+                                        COMMANDS. CREDIT UNIT(S): 1 UNIT. PRE-REQUISITE: DRAW10W-1</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">FW03-2</td>
+                                    <td style="text-align:left">PHYSICAL ACTIVITIES TOWARD HEALTH AND FITNESS 3 (PATHFIT
+                                        3): DANCE / MARTIAL ARTS</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left">FW01-2, FW02-2</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE WILL FOCUS ON THE IMPROVEMENT OF THE STUDENTS’ BASIC
+                                        SKILLS AND BE INTRODUCED TO ADVANCED SKILLS IN INDIVIDUAL/DUAL SPORTS WHILE
+                                        PROVIDING THEM WITH THE KNOWLEDGE OF RULES AND STRATEGIES RELATED TO THE
+                                        ACTIVITIES. IT ALSO INVOLVES THE FUNDAMENTAL TECHNIQUES FOR SPORTS CONDITIONING.
+                                        THROUGH SKILLS TRAINING, EXERCISE DRILLS, GAME PLAY AND INDEPENDENT OR
+                                        SELF-DIRECTED PAS, FITNESS LEVELS WILL BE ENHANCED. IN CONJUNCTION WITH THIS,
+                                        FITNESS LEVELS, PA PARTICIPATION AND DIETARY/EATING PATTERNS ARE EVALUATED TO
+                                        MONITOR ONE’S PROGRESS AND ACHIEVEMENT OF PERSONAL FITNESS AND DIETARY GOALS.
+                                        COURSE CREDIT: 2 UNITS PRE-REQUISITE: FW01-2 AND FW02-2</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED102-1</td>
+                                    <td style="text-align:left">MATHEMATICS IN THE MODERN WORLD</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH147-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">This course is a compendium of a range of applications of
+                                        mathematics in the science and engineering fields. It highlights the practical,
+                                        intellectual, and aesthetic dimensions of mathematics with the ultimate goal of
+                                        enhancing appreciation and interest of the mathematical field. The first part
+                                        focuses on the exposition of the universality of the nature and language of
+                                        mathematics, making it a powerful tool in the advancement of other fields. The
+                                        remaining part of the course is a walkthrough of the diverse and varied
+                                        applications of mathematics in the engineering field, with emphasis on modelling
+                                        and problem-solving techniques and strategies.
+                                        Credit: 3 units
+                                        Pre-requisite: MATH146
+                                        Co-requsite: MATH147</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED103</td>
+                                    <td style="text-align:left">READINGS IN PHILIPPINE HISTORY</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">Philippine history viewed from the lens of selected primary
+                                        sources in different periods, analysis and interpretations. The course aims to
+                                        expose students to different facets of Philippine history through the lens of
+                                        eyewitnesses. Rather than rely on secondary materials such as textbooks, which
+                                        is the usual approach in teaching Philippine history, different types of primary
+                                        sources will be used – written (qualitative and quantitative), oral, visual,
+                                        audio-visual, digital – covering various aspects of Philippine life (political,
+                                        economic, social, cultural). Students are expected to analyze the selected
+                                        reading contextually and in terms of content (stated and implied). The end goal
+                                        is to enable students to understand and appreciate our rich past by deriving
+                                        insights from those who were actually present at the time of the event.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH148-0</td>
+                                    <td style="text-align:left">CALCULUS 3</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH147-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE COVERS SEQUENCES, INFINITE SERIES, POWER SERIES,
+                                        VECTORS IN THE PLANE AND IN 3-DIMENSIONAL SPACE, DIRECTIONAL DERIVATIVES AND
+                                        GRADIENT, VECTOR-VALUED FUNCTIONS, AND VECTOR FIELDS. CREDIT: 3 UNITS.
+                                        PREREQUISITE: MATH147</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">NSTP300</td>
+                                    <td style="text-align:left">NATIONAL SERVICE TRAINING PROGRAM 3</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1.5</td>
+                                    <td style="text-align:left">NSTP200</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">CWTS102
+                                        CIVIC WELFARE TRAINING SERVICE 02
+                                        A two-part program that re-introduces the NSTP-SERVICE components of the
+                                        NSTP-CWTS Dimensions of Development and the hands-on application that involves
+                                        project preparation, planning and implementation at the assigned adopted
+                                        communities. Credit Unit(s): 1.5 units. Pre-requisites: CWTS101.
+                                        ROTC102
+                                        RESERVE OFFICERS TRAINING CORPS 02
+                                        Part 1 of preparing the cadets for incorporation as infantryman in the Army
+                                        Reserve Force. Cadets are taught with basic knowledge and attitudes on general
+                                        military subjects, small unit tactics, crew-served weapons and individual unit
+                                        training as Army Reservist and ground drills. Credits: 1.5 units.
+                                        Pre-requisites: ROTC101</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">PHY104</td>
+                                    <td style="text-align:left">PHYSICS FOR ENGINEERS 1</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left">MATH146-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">A CALCULUS-BASED PHYSICS FOR ENGINEERING PROGRAMS THAT COVERS AT
+                                        MINIMUM THE FOLLOWING TOPICS: VECTORS AND SCALARS, LINEAR AND ROTATIONAL
+                                        KINEMATICS, LINEAR AND ROTATIONAL DYNAMICS, ELASTICITY AND FLUID MECHANICS.
+                                        PRE-REQUISITE: MATH146-0. CO-REQUISITE: NONE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">PHY104L</td>
+                                    <td style="text-align:left">PHYSICS FOR ENGINEERS LABORATORY 1</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left">MATH146-0</td>
+                                    <td style="text-align:left">PHY104</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS IS THE LABORATORY COURSE TO ACCOMPANY PHYSICS FOR ENGINEERS
+                                        1. PRE-REQUISITE: MATH146-0. CO-REQUISITE: PHY104</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="special">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>TOTAL</td>
+                                    <td>19.5</td>
+                                    <td>13.5</td>
+                                    <td>16.5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="hidden"></td>
+                                    <td class="hidden"></td>
+                                </tr>
+                            </table><br />
+                            <table class="tableStyle2">
+                                <tr class="title">
+                                    <td width="5%">Yr</td>
+                                    <td width="5%">Term</td>
+                                    <td width="5%">Course Code</td>
+                                    <td width="30%">Course Title</td>
+                                    <td width="5%">Lec Hrs</td>
+                                    <td width="5%">Lab Hrs</td>
+                                    <td width="5%">Credit Units</td>
+                                    <td width="15%">Pre-Requisites</td>
+                                    <td width="15%">Co-Requisites</td>
+                                    <td width="15%">Paired Courses</td>
+                                    <td class="hidden">Description</td>
+                                    <td class="hidden">Syllabus</td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td style="text-align:left;">EEA101-4</td>
+                                    <td style="text-align:left">ELECTRICAL CIRCUITS 1</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH147-0</td>
+                                    <td style="text-align:left">PHY105, PHY105L</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course covers nodal and mesh analysis; application of network
+                                        theorems in circuit analysis; analysis of circuits with controlled sources and
+                                        ideal op-amps; fundamentals of capacitors and inductors; analysis of dc-driven
+                                        RL, RC, and RLC circuits; sinusoidal steady-state analysis of general RLC
+                                        circuits.
+                                        Credit : 3 units
+                                        Corequisite : None
+                                        : EE101L for PHEE
+                                        Prerequisites : MATH147, PHYS101, PHY101L
+                                        : PHYS114, PHYS114L for PHEE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">EEA101L-4</td>
+                                    <td style="text-align:left">ELECTRICAL CIRCUITS 1 LABORATORY</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left">MATH147-0</td>
+                                    <td style="text-align:left">EEA101-4, PHY105, PHY105L</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">A laboratory course to accompany EEA101.
+                                        Credit : 1 unit
+                                        Corequisite : EEA101
+                                        Prerequisites : MATH147-0, PHYS105, PHYS105L
+                                        : PHYS114, PHYS114L for PHEE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">FW04-2</td>
+                                    <td style="text-align:left">PHYSICAL ACTIVITIES TOWARD HEALTH AND FITNESS 4 (PATHFIT
+                                        4): GROUP EXERCISE</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left">FW01-2, FW02-2</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE WILL FOCUS ON THE IMPROVEMENT OF THE STUDENTS’ BASIC
+                                        SKILLS AND BE INTRODUCED TO ADVANCED SKILLS IN TEAM SPORTS WHILE PROVIDING THEM
+                                        WITH THE KNOWLEDGE OF RULES AND STRATEGIES RELATED TO THE ACTIVITIES. IT ALSO
+                                        INVOLVES THE FUNDAMENTAL TECHNIQUES FOR SPORTS CONDITIONING. THROUGH SKILLS
+                                        TRAINING, EXERCISE DRILLS, GAME PLAY AND INDEPENDENT OR SELF-DIRECTED PAS,
+                                        FITNESS LEVELS WILL BE ENHANCED. IN CONJUNCTION WITH THIS, FITNESS LEVELS, PA
+                                        PARTICIPATION AND DIETARY/EATING PATTERNS ARE EVALUATED TO MONITOR ONE’S
+                                        PROGRESS AND ACHIEVEMENT OF PERSONAL FITNESS AND DIETARY GOALS. COURSE CREDIT: 2
+                                        UNITS PRE-REQUISITE: FW01-2 AND FW02-2</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED101</td>
+                                    <td style="text-align:left">UNDERSTANDING THE SELF</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course deals with the nature of identity, as well as the
+                                        factors and forces that affect the development and maintenance of personal
+                                        identity. This course is intended to facilitate the exploration of the issues
+                                        and concerns regarding self and identity to arrive at a better understanding of
+                                        one's self. It stives to meet this goal by stressing the inregration of the
+                                        personal with the academic-contextualizing matters discussed in the classroom
+                                        and in the everyday experiences os students - making for better learning,
+                                        generating a new appreciation for the learning process, and developing a more
+                                        critical and reflective attitude while enabling them to manage and improve their
+                                        selves to attain a better quality of life.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">GED108</td>
+                                    <td style="text-align:left">ART APPRECIATION</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">The course aims to develop students’ ability to appreciate,
+                                        analyze, and critique works of art. Through interdisciplinary and multimodal
+                                        approaches, this course equips students with a broad knowledge of the practical,
+                                        historical, philosophical, and social relevance of the arts in order to hone
+                                        students’ ability to articulate their understanding of the arts. The course also
+                                        develops students’ competency in researching and curating art as well as
+                                        conceptualizing, mounting, and evaluating art productions. The course aims to
+                                        develop students’ genuine appreciation for Philippine arts by providing them
+                                        opportunities to explore the diversity and richness and their rootedness in
+                                        Filipino culture.
+                                    </td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">MATH156-0</td>
+                                    <td style="text-align:left">DIFFERENTIAL EQUATIONS</td>
+                                    <td>4.5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                    <td style="text-align:left">MATH148-0</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS COURSE IS INTENDED FOR ALL ENGINEERING STUDENTS TO HAVE A
+                                        FIRM FOUNDATION ON DIFFERENTIAL EQUATIONS IN PREPARATION FOR THEIR
+                                        DEGREE-SPECIFIC ADVANCED MATHEMATICS COURSES. IT COVERS FIRST ORDER DIFFERENTIAL
+                                        EQUATIONS, NTH ORDER LINEAR DIFFERENTIAL EQUATIONS AND SYSTEMS OF FIRST ORDER
+                                        LINEAR DIFFERENTIAL EQUATIONS. IT ALSO INTRODUCES THE CONCEPT OF LAPLACE
+                                        TRANSFORMS IN SOLVING DIFFERENTIAL EQUATIONS. THE STUDENTS ARE EXPECTED TO BE
+                                        ABLE TO RECOGNIZE DIFFERENT KINDS OF DIFFERENTIAL EQUATIONS, DETERMINE THE
+                                        EXISTENCE AND UNIQUENESS OF SOLUTION, SELECT THE APPROPRIATE METHODS OF SOLUTION
+                                        AND INTERPRET THE OBTAINED SOLUTION. STUDENTS ARE ALSO EXPECTED TO RELATE
+                                        DIFFERENTIAL EQUATIONS TO VARIOUS PRACTICAL ENGINEERING AND SCIENTIFIC PROBLEMS
+                                        AS WELL AS EMPLOY COMPUTER TECHNOLOGY IN SOLVING AND VERIFYING SOLUTIONS CREDIT:
+                                        3 UNITS PREREQUISITE: MATH147-0 MATH148-0, MATH148X FOR
+                                        GSE,CE,ESE,CESE,CPE,ECE,EE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">NSTP400</td>
+                                    <td style="text-align:left">NATIONAL SERVICE TRAINING PROGRAM 4</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1.5</td>
+                                    <td style="text-align:left">NSTP300</td>
+                                    <td style="text-align:left"></td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">CWTS103
+                                        CIVIC WELFARE TRAINING SERVICE 03
+                                        Part 2 of the hands-on application of the acquired skills and knowledge that
+                                        involves project preparation, planning and implementation at the assigned
+                                        adopted communities. Credits: 1.5 Units. Pre-requisites: CWTS102.
+                                        ROTC103
+                                        RESERVE OFFICERS TRAINING CORPS 03
+                                        Part 2 of preparing the cadets for incorporation as infantryman in the Army
+                                        Reserve Force. Cadets are taught with basic knowledge and attitudes on general
+                                        military subjects, small unit tactics, crew-served weapons and individual unit
+                                        training as Army Reservist and ground drills. Credits: 1.5 Units.
+                                        Pre-requisites: ROTC102</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">PHY105</td>
+                                    <td style="text-align:left">PHYSICS FOR ENGINEERS 2</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>2</td>
+                                    <td style="text-align:left">PHY104, PHY104L</td>
+                                    <td style="text-align:left">EEA101-4, EEA101L-4</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">A CALCULUS-BASED PHYSICS FOR ENGINEERING PROGRAMS THAT COVERS AT
+                                        MINIMUM THE FOLLOWING TOPICS: THERMAL EXPANSION, HEAT AND CALORIMETRY, HEAT
+                                        TRANSFER, WAVES, ELECTRICITY, MAGNETISM AND OPTICS. PRE-REQUISITE: PHY104,
+                                        PHY104L. CO-REQUISITE: NONE</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">PHY105L</td>
+                                    <td style="text-align:left">PHYSICS FOR ENGINEERS LABORATORY 2</td>
+                                    <td>-</td>
+                                    <td>4.5</td>
+                                    <td>1</td>
+                                    <td style="text-align:left">PHY104, PHY104L</td>
+                                    <td style="text-align:left">EEA101-4, EEA101L-4, PHY105</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS IS THE LABORATORY COURSE TO ACCOMPANY PHYSICS FOR ENGINEERS
+                                        2. PRE-REQUISITE: PHY104, PHY104L. CO-REQUISITE: PHY105</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="bgColorNotYetTaken selectRow"
+                                    onClick="if (!window.__cfRLUnblockHandlers) return false; showDetails(this)"
+                                    data-cf-modified-939f13ad08975f8c954a9c8a->
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align:left;">PHY105X</td>
+                                    <td style="text-align:left">PHYSICS EXIT EXAM</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td> (0) </td>
+                                    <td style="text-align:left">PHY104, PHY104L</td>
+                                    <td style="text-align:left">PHY105</td>
+                                    <td style="text-align:left"></td>
+                                    <td class="hidden">THIS IS THE EXIT EXAMINATION FOR THE PHYSICS FOR ENGINEERS
+                                        COURSES.</td>
+                                    <td class="hidden"></td>
+                                </tr>
+                                <tr class="special">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>TOTAL</td>
+                                    <td>24</td>
+                                    <td>13.5</td>
+                                    <td>19.5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="hidden"></td>
+                                    <td class="hidden"></td>
+                                </tr>
+                            </table><br />
+                        </div>
+                        <div id="specializationList" class="hidden">
+                            <p class="strong textCenter">There are no Specialization Curriculum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <script type="939f13ad08975f8c954a9c8a-text/javascript" src="../Jscript/tinybox.js"></script>
+            <script type="939f13ad08975f8c954a9c8a-text/javascript" src="../Jscript/jsUtility.js"></script>
+            <script type="939f13ad08975f8c954a9c8a-text/javascript" src="../Jscript/jsCurriculum.js"></script>
+        </div>
+        <div class="hairLine"></div>
+        <div class="wideLine"></div>
+        <div class="hairLine"></div>
+        <div id="footer">
+            <span>Copyright © 2001-2017. All rights reserved. <a href="http://www.mapua.edu.ph" target="_blank"
+                    class="white noDecor">Map&uacute;a University</a>
+            </span>
+            <br />
+            <a href="https://my.mapua.edu.ph/Public/TermsOfService.aspx" id="ctl00_aTerms" class="white boldContent"
+                target="_blank">Terms of Service</a> | <a href="https://my.mapua.edu.ph/Public/PrivacyPolicy.aspx"
+                id="ctl00_aPrivacy" class="white boldContent" target="_blank">Privacy Policy</a><br />
+            <a href="/cdn-cgi/l/email-protection#264e434a564243554d664b475653470843425308564e"
+                class="white noDecor"><span class="__cf_email__"
+                    data-cfemail="88e0ede4f8ecedfbe3c8e5e9f8fde9a6edecfda6f8e0">[email&#160;protected]</span></a>
+            <br />
+            <noscript>
+                <meta http-equiv="refresh" content="0; URL=https://my.mapua.edu.ph/Error/DisabledJavaScript.html" />
+            </noscript>
+        </div>
+    </form>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="939f13ad08975f8c954a9c8a-|49" defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587"
+        integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA=="
+        data-cf-beacon='{"rayId":"88d5a386dbd304ce","version":"2024.4.1","token":"6b3bdc68b4fd4ea0a3a3c1e5963ab154"}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

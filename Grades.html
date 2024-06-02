@@ -11,6 +11,7 @@
     <link href="Css/csStyle.css" rel="stylesheet" type="text/css">
     <link href="Css/csStructure.css" rel="stylesheet" type="text/css">
     <link href="Css/cssAlert.css" rel="stylesheet" type="text/css">
+    <link href="Css/csCurriculum.css" rel="stylesheet" type="text/css">
     <link href="Css/jquery-ui-1.12.1-blitzer/jquery-ui.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="Jscript/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="Jscript/jquery-migrate-1.4.1.min.js"></script>
@@ -21,7 +22,7 @@
 </head>
 
 <body>
-    <form method="post" action="./Grades.aspx" id="aspnetForm">
+    <form method="post" action="./Grades.html" id="aspnetForm">
         <div class="aspNetHidden">
             <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
             <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
@@ -66,11 +67,11 @@
                 <div id="profile" class="show"><span class="first">Profile</span><span id="pro" class="excol"
                         style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
                 <ul class="subUl toggle">
-                    <li><a id="contactinfo" href="ContactInfo.aspx">My Contact Info</a></li>
-                    <li><a id="datasheet" href="StudentDataSheet.aspx">My Personal Data</a></li>
+                    <li><a id="contactinfo" href="ContactInfo.html">My Contact Info</a></li>
+                    <li><a id="datasheet" href="StudentDataSheet.html">My Personal Data</a></li>
                     <li id="grades" class="selected">My Grades</li>
-                    <li id="schedule"><a href="Schedule.aspx">My Schedule</a></li>
-                    <li id="curriculum"><a href="Curriculum.aspx">My Curriculum</a></li>
+                    <li id="schedule"><a href="Schedule.html">My Schedule</a></li>
+                    <li id="curriculum"><a href="Curriculum.html">My Curriculum</a></li>
                     <li id="mail"><a href="http://portal.office.com" target="_blank">My Office 365</a></li>
                     <li id="changepassword"><a href="http://aka.ms/sspr" target="_blank">Reset My Password</a></li>
                     <li id="registerpassword"><a href="http://aka.ms/ssprsetup" target="_blank">Reset Info Update</a>
@@ -81,7 +82,7 @@
                 <ul class="subUl toggle">
                     <li id="GSmanual"><a href="https://my.mapua.edu.ph/Student/Online Enrollment User Manual.pdf"
                             target="_blank">Online Enrollment User Manual</a></li>
-                    <li id="gsa"><a href="GSA.aspx">Print GSA</a></li>
+                    <li id="gsa"><a href="GSA.html">Print GSA</a></li>
                 </ul>
                 <div id="payments" class="show"><span class="first">Bills &amp; Payments</span><span id="pays"
                         class="excol"
@@ -89,28 +90,28 @@
                 <ul class="subUl toggle">
                     <li id="bukaslogo"><a href="MyMapuaBukasPDF.pdf" target="_blank">Guidelines for Bukas Installment
                             Plan</a></li>
-                    <li id="charges"><a href="Payment.aspx">Statement of account</a></li>
-                    <li id="paymenthistory"><a href="PaymentHistory.aspx">Payment History</a></li>
+                    <li id="charges"><a href="Payment.html">Statement of account</a></li>
+                    <li id="paymenthistory"><a href="PaymentHistory.html">Payment History</a></li>
                 </ul>
                 <div id="services" class="show"><span class="first">Services</span><span id="ser" class="excol"
                         style="background-image: url(&quot;Images/Navigation/minusSmall.png&quot;);">&nbsp;</span></div>
                 <ul class="subUl toggle">
-                    <li id="academicdocuments"><a href="AcademicDocuments.aspx">Academic Documents</a></li>
-                    <li id="downloadableforms"><a href="DownloadableForms.aspx">Downloadable Forms</a></li>
-                    <li id="ecm"><a href="ECM.aspx" target="_blank">E-CM</a></li>
-                    <li id="coursera"><a href="Coursera.aspx">Subscribe to Coursera</a></li>
-                    <li id="linkedin"><a href="LinkedinLearning.aspx">LinkedIn Learning</a></li>
+                    <li id="academicdocuments"><a href="AcademicDocuments.html">Academic Documents</a></li>
+                    <li id="downloadableforms"><a href="DownloadableForms.html">Downloadable Forms</a></li>
+                    <li id="ecm"><a href="ECM.html" target="_blank">E-CM</a></li>
+                    <li id="coursera"><a href="Coursera.html">Subscribe to Coursera</a></li>
+                    <li id="linkedin"><a href="LinkedinLearning.html">LinkedIn Learning</a></li>
                 </ul>
                 <div id="feedbackParent" class="show"><span class="first">Concern/Feedback</span><span id="feedb"
                         class="excol"
                         style="background-image: url(&quot;Images/Navigation/plusSmall.png&quot;);">&nbsp;</span></div>
                 <ul class="subUl toggle" style="display: none;">
                     <li id="counselor"><a href="mailto:ee_cgc@mymail.mapua.edu.ph">Email myCounselor</a></li>
-                    <li id="intakeInterview"><a href="IntakeInterview.aspx">Intake Interview</a></li>
-                    <li id="needAnalysis"><a href="NeedAnalysisSurvey.aspx">Need Analysis Survey</a></li>
-                    <li id="feedback"><a href="/Auth/Feedback.aspx" target="_blank">Service Feedback</a></li>
+                    <li id="intakeInterview"><a href="IntakeInterview.html">Intake Interview</a></li>
+                    <li id="needAnalysis"><a href="NeedAnalysisSurvey.html">Need Analysis Survey</a></li>
+                    <li id="feedback"><a href="/Auth/Feedback.html" target="_blank">Service Feedback</a></li>
                 </ul>
-                <div id="logoff"><a href="/LogOff.aspx">Sign Out</a></div>
+                <div id="logoff"><a href="/LogOff.html">Sign Out</a></div>
                 <br>
             </div>
             <div id="contentBody">
@@ -471,8 +472,8 @@
                     class="white noDecor">Mapúa University</a>
             </span>
             <br>
-            <a href="https://my.mapua.edu.ph/Public/TermsOfService.aspx" id="ctl00_aTerms" class="white boldContent"
-                target="_blank">Terms of Service</a> | <a href="https://my.mapua.edu.ph/Public/PrivacyPolicy.aspx"
+            <a href="https://my.mapua.edu.ph/Public/TermsOfService.html" id="ctl00_aTerms" class="white boldContent"
+                target="_blank">Terms of Service</a> | <a href="https://my.mapua.edu.ph/Public/PrivacyPolicy.html"
                 id="ctl00_aPrivacy" class="white boldContent" target="_blank">Privacy Policy</a><br>
             <a href="mailto:helpdesk@mapua.edu.ph" class="white noDecor">helpdesk@mapua.edu.ph</a>
             <br>
